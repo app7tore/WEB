@@ -1,0 +1,17 @@
+.mymodal{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.mymodalbox{
+  padding: 10px;
+  background-color: white;
+}

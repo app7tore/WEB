@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="skaicius1" type="text" name="" value="5">
+    X:<input id="x" type="text" name="" value="">
+    Y:<input id="y" type="text" name="" value="">
+
+    <input type="button" name="" value="knopke">
+
+    <div class="box">
+
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/master.js"></script>
+    <script type="text/javascript">
+    //  $("[type='button']").click(parodyk);
+
+        $("[type='button']").click(function(){
+          var laukoSkaicius = $("#skaicius1").val();
+          console.log(laukoSkaicius);
+        });
+
+        $(".box").mousemove(function(){
+          $("#x").val(event.clientX);
+          $("#y").val(event.clientY);
+        });
+
+
+    </script>
+  </body>
+</html>

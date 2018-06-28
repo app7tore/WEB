@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <style> fieldset{ width: 50% } </style> -->
+  </head>
+  <body>
+    <!-- <form class="" action="index.html" method="post"> <fieldset> Vardas: <input type="text" name="username" value=""><br> Slaptazodis: <input type="password" name="password" value=""> </fieldset> <input type="submit" name="" value="OK"> </form> -->
+
+    <form>
+      <fieldset>
+        <legend>Prisijungimas</legend>
+        <table>
+          <tr>
+            <td>Vardas</td>
+            <td><input type="text" name="username" value="" required></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" value=""></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input style="width:100%" type="submit" name="" value="OK"></td>
+          </tr>
+        </table>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Kokias programavimo kalbas zinote?</legend>
+        <table>
+          <tr>
+            <td>C#</td>
+            <td>
+              <input type="checkbox" name="language" value="csharp">
+            </td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>
+              <input type="checkbox" name="language" value="java">
+            </td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>
+              <input type="checkbox" name="language" value="javascript">
+            </td>
+          </tr>
+        </table>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Jusu lytis</legend>
+        <table>
+          <tr>
+            <td>Vyras</td>
+            <td>
+              <input type="radio" name="gender" value="man">
+            </td>
+          </tr>
+          <tr>
+            <td>Moteris</td>
+            <td>
+              <input type="radio" name="gender" value="woman">
+            </td>
+          </tr>
+        </table>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Jusu komentaras</legend>
+        <textarea placeholder="parasykite komentara" name="name" rows="5" cols="35"></textarea>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Kontaktai</legend>
+        <table>
+          <tr>
+            <td>El. pastas</td>
+            <td>
+              <input type="email" name="" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>Svetaine</td>
+            <td>
+              <input type="url" name="" value="">
+            </td>
+          </tr>
+        </table>
+      </fieldset><br>
+      <input type="submit" name="" value="Siusti">
+    </form>
+
+  </body>
+</html>

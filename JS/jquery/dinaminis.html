@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="tekstas" type="text" name="" value="">
+    <input id="ok" type="button" name="" value="OK">
+    <div class="box">
+      <ul>
+
+      </ul>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+      $("#ok").on("click", function(){
+        var laukoReiksme = $("#tekstas").val();
+        var listItem = $("<li></li>");
+        listItem.text(laukoReiksme);
+        $(".box ul").append(listItem);
+        $("#tekstas").val("");
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input class="name" type="text" name="" value=""><span class="name"></span><br>
+    <input class="surname" type="text" name="" value=""><span class="surname"></span><br>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(".name").blur(function(){   // privalomo lauko aprasymas
+        if($(this).val() == ""){
+          $("span.name").text("Laukas privalomas");
+        }
+      });
+    </script>
+
+  </body>
+</html>

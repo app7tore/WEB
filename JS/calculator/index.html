@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box {
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input id="textArea" type="text" name="" value="0">
+      <table>
+        <tr>
+          <td><input id="seven" class="knopke" type="button" name="" value="7"></td>
+          <td><input id="eight" class="knopke" type="button" name="" value="8"></td>
+          <td><input id="nine" class="knopke" type="button" name="" value="9"></td>
+          <td><input id="plus" type="button" name="" value="+"></td>
+        </tr>
+        <tr>
+          <td><input id="four" class="knopke" type="button" name="" value="4"></td>
+          <td><input id="five" class="knopke" type="button" name="" value="5"></td>
+          <td><input id="six" class="knopke" type="button" name="" value="6"></td>
+          <td><input id="minus" type="button" name="" value="-"></td>
+        </tr>
+        <tr>
+          <td><input id="one" class="knopke" type="button" name="" value="1"></td>
+          <td><input id="two" class="knopke" type="button" name="" value="2"></td>
+          <td><input id="three" class="knopke" type="button" name="" value="3"></td>
+          <td>
+            <input id="lygybe" type="button" name="" value="=">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="../jquery/js/jquery-3.3.1.js"></script>
+    <script src="js/master.js"></script>
+    <script type="text/javascript">
+      $("[type='button']").click(function () {
+        var mygtukoReiksme = $(this).val();
+        $("#textArea").val(mygtukoReiksme);
+      });
+      $("#plus").click(function () {
+        // var sum = $("#textArea").val() + parodyk();
+        $("[class='button']").click(function () {
+          var mygtukoReiksme2 = $(this).val();
+        });
+        var sum = mygtukoReiksme.val() + mygtukoReiksme2.val();
+        $("#textArea").val(sum);
+      });
+      $("#lygybe").click(function () {
+        $("#textArea").val(sum);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.trecias{
+  background-color: lightgreen;
+}
+
+#paskutinis {
+  line-height: normal;
+  word-spacing: 10px;
+  color: darkviolet;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input[required]{
+  background-color: #FADBD8;
+  font-weight: bold;
+}
+
+textarea[required]{
+  background-color: #AED6F1;
+  width: 60%;
+}
